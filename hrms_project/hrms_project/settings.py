@@ -83,16 +83,22 @@ WSGI_APPLICATION = 'hrms_project.wsgi.application'
 
 
 
+import dj_database_url
+
 DATABASES = {
- 'default': {
-     'ENGINE': 'django.db.backends.mysql',
-     'NAME': 'hrms_db',
-     'USER': 'root',
-     'PASSWORD': 'cheeku@2003',  # your MySQL root password
-     'HOST': 'localhost',
-     'PORT': '3306',
- }
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'hrms_db',
+        'USER': 'root',
+        'PASSWORD': 'cheeku@2003',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
 }
+
+db_from_env = dj_database_url.config(conn_max_age=600)
+if db_from_env:
+    DATABASES['default'] = db_from_env
 
 
 # Password validation
