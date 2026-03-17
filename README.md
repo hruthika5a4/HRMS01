@@ -4,7 +4,7 @@ A lightweight, professional Human Resource Management System (HRMS) built for ad
 
 ## ✨ Features
 
--   **Dashboard Overview**: Real-time stats for total employees, attendance rates, and a "Top Performers" leaderboard.
+-   **Dashboard Overview**: Real-time stats for total employees, presence counts, and active activity logs.
 -   **Employee Management**:
     -   Full CRUD operations (Create, Read, Update, Delete).
     -   Auto-generating unique Employee IDs (e.g., EMP001, EMP002).

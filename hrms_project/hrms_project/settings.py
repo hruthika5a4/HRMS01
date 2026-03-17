@@ -27,7 +27,7 @@ import os
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['*'] # In a real production app, specify your domain here
+ALLOWED_HOSTS = ['hrms-backend-m9hj.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
