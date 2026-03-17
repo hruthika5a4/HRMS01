@@ -1,0 +1,19 @@
+# Node
+hrms-frontend/node_modules/
+hrms-frontend/dist/
+hrms-frontend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+hrms_project/db.sqlite3
+hrms_project/vantage/
+.venv/
+env/
+venv/
+ENV/
+
+# OS
+.DS_Store
+Thumbs.db
